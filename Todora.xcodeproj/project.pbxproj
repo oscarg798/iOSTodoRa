@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFB79CBB241E8B6D008CA19B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CBA241E8B6D008CA19B /* AppDelegate.swift */; };
+		FFB79CBD241E8B6D008CA19B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CBC241E8B6D008CA19B /* SceneDelegate.swift */; };
+		FFB79CBF241E8B6D008CA19B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CBE241E8B6D008CA19B /* ContentView.swift */; };
+		FFB79CC1241E8B70008CA19B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB79CC0241E8B70008CA19B /* Assets.xcassets */; };
+		FFB79CC4241E8B70008CA19B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB79CC3241E8B70008CA19B /* Preview Assets.xcassets */; };
+		FFB79CC7241E8B70008CA19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB79CC5241E8B70008CA19B /* LaunchScreen.storyboard */; };
+		FFB79CD2241E8B71008CA19B /* TodoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CD1241E8B71008CA19B /* TodoraTests.swift */; };
+		FFB79CDD241E8B71008CA19B /* TodoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CDC241E8B71008CA19B /* TodoraUITests.swift */; };
+		FFB79CEC241E8CA1008CA19B /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB79CEB241E8CA1008CA19B /* SharedCode.framework */; };
+		FFB79CED241E8CA1008CA19B /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFB79CEB241E8CA1008CA19B /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFB79CF1241E8EA1008CA19B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CEF241E8EA1008CA19B /* ViewController.swift */; };
+		FFB79CF2241E8EA1008CA19B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB79CF0241E8EA1008CA19B /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFB79CCE241E8B71008CA19B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB79CAF241E8B6D008CA19B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB79CB6241E8B6D008CA19B;
+			remoteInfo = Todora;
+		};
+		FFB79CD9241E8B71008CA19B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB79CAF241E8B6D008CA19B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB79CB6241E8B6D008CA19B;
+			remoteInfo = Todora;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFB79CEE241E8CA1008CA19B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FFB79CED241E8CA1008CA19B /* SharedCode.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FFB79CB7241E8B6D008CA19B /* Todora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB79CBA241E8B6D008CA19B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFB79CBC241E8B6D008CA19B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFB79CBE241E8B6D008CA19B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFB79CC0241E8B70008CA19B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFB79CC3241E8B70008CA19B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFB79CC6241E8B70008CA19B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFB79CC8241E8B70008CA19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB79CCD241E8B71008CA19B /* TodoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB79CD1241E8B71008CA19B /* TodoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoraTests.swift; sourceTree = "<group>"; };
+		FFB79CD3241E8B71008CA19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB79CD8241E8B71008CA19B /* TodoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB79CDC241E8B71008CA19B /* TodoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoraUITests.swift; sourceTree = "<group>"; };
+		FFB79CDE241E8B71008CA19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB79CEB241E8CA1008CA19B /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../../ToDoRa/common/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
+		FFB79CEF241E8EA1008CA19B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFB79CF0241E8EA1008CA19B /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFB79CB4241E8B6D008CA19B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB79CEC241E8CA1008CA19B /* SharedCode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB79CCA241E8B71008CA19B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB79CD5241E8B71008CA19B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFB79CAE241E8B6D008CA19B = {
+			isa = PBXGroup;
+			children = (
+				FFB79CB9241E8B6D008CA19B /* Todora */,
+				FFB79CD0241E8B71008CA19B /* TodoraTests */,
+				FFB79CDB241E8B71008CA19B /* TodoraUITests */,
+				FFB79CB8241E8B6D008CA19B /* Products */,
+				FFB79CEA241E8CA1008CA19B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFB79CB8241E8B6D008CA19B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB79CB7241E8B6D008CA19B /* Todora.app */,
+				FFB79CCD241E8B71008CA19B /* TodoraTests.xctest */,
+				FFB79CD8241E8B71008CA19B /* TodoraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFB79CB9241E8B6D008CA19B /* Todora */ = {
+			isa = PBXGroup;
+			children = (
+				FFB79CBA241E8B6D008CA19B /* AppDelegate.swift */,
+				FFB79CBC241E8B6D008CA19B /* SceneDelegate.swift */,
+				FFB79CBE241E8B6D008CA19B /* ContentView.swift */,
+				FFB79CC0241E8B70008CA19B /* Assets.xcassets */,
+				FFB79CC5241E8B70008CA19B /* LaunchScreen.storyboard */,
+				FFB79CC8241E8B70008CA19B /* Info.plist */,
+				FFB79CC2241E8B70008CA19B /* Preview Content */,
+				FFB79CEF241E8EA1008CA19B /* ViewController.swift */,
+				FFB79CF0241E8EA1008CA19B /* ViewController.xib */,
+			);
+			path = Todora;
+			sourceTree = "<group>";
+		};
+		FFB79CC2241E8B70008CA19B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FFB79CC3241E8B70008CA19B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFB79CD0241E8B71008CA19B /* TodoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB79CD1241E8B71008CA19B /* TodoraTests.swift */,
+				FFB79CD3241E8B71008CA19B /* Info.plist */,
+			);
+			path = TodoraTests;
+			sourceTree = "<group>";
+		};
+		FFB79CDB241E8B71008CA19B /* TodoraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB79CDC241E8B71008CA19B /* TodoraUITests.swift */,
+				FFB79CDE241E8B71008CA19B /* Info.plist */,
+			);
+			path = TodoraUITests;
+			sourceTree = "<group>";
+		};
+		FFB79CEA241E8CA1008CA19B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFB79CEB241E8CA1008CA19B /* SharedCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFB79CB6241E8B6D008CA19B /* Todora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB79CE1241E8B71008CA19B /* Build configuration list for PBXNativeTarget "Todora" */;
+			buildPhases = (
+				FFB79CF3241E910F008CA19B /* Run Script */,
+				FFB79CB3241E8B6D008CA19B /* Sources */,
+				FFB79CB4241E8B6D008CA19B /* Frameworks */,
+				FFB79CB5241E8B6D008CA19B /* Resources */,
+				FFB79CEE241E8CA1008CA19B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Todora;
+			productName = Todora;
+			productReference = FFB79CB7241E8B6D008CA19B /* Todora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFB79CCC241E8B71008CA19B /* TodoraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB79CE4241E8B71008CA19B /* Build configuration list for PBXNativeTarget "TodoraTests" */;
+			buildPhases = (
+				FFB79CC9241E8B71008CA19B /* Sources */,
+				FFB79CCA241E8B71008CA19B /* Frameworks */,
+				FFB79CCB241E8B71008CA19B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB79CCF241E8B71008CA19B /* PBXTargetDependency */,
+			);
+			name = TodoraTests;
+			productName = TodoraTests;
+			productReference = FFB79CCD241E8B71008CA19B /* TodoraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFB79CD7241E8B71008CA19B /* TodoraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB79CE7241E8B71008CA19B /* Build configuration list for PBXNativeTarget "TodoraUITests" */;
+			buildPhases = (
+				FFB79CD4241E8B71008CA19B /* Sources */,
+				FFB79CD5241E8B71008CA19B /* Frameworks */,
+				FFB79CD6241E8B71008CA19B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB79CDA241E8B71008CA19B /* PBXTargetDependency */,
+			);
+			name = TodoraUITests;
+			productName = TodoraUITests;
+			productReference = FFB79CD8241E8B71008CA19B /* TodoraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFB79CAF241E8B6D008CA19B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = oscargallon;
+				TargetAttributes = {
+					FFB79CB6241E8B6D008CA19B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FFB79CCC241E8B71008CA19B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FFB79CB6241E8B6D008CA19B;
+					};
+					FFB79CD7241E8B71008CA19B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FFB79CB6241E8B6D008CA19B;
+					};
+				};
+			};
+			buildConfigurationList = FFB79CB2241E8B6D008CA19B /* Build configuration list for PBXProject "Todora" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFB79CAE241E8B6D008CA19B;
+			productRefGroup = FFB79CB8241E8B6D008CA19B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFB79CB6241E8B6D008CA19B /* Todora */,
+				FFB79CCC241E8B71008CA19B /* TodoraTests */,
+				FFB79CD7241E8B71008CA19B /* TodoraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFB79CB5241E8B6D008CA19B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB79CC7241E8B70008CA19B /* LaunchScreen.storyboard in Resources */,
+				FFB79CC4241E8B70008CA19B /* Preview Assets.xcassets in Resources */,
+				FFB79CF2241E8EA1008CA19B /* ViewController.xib in Resources */,
+				FFB79CC1241E8B70008CA19B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB79CCB241E8B71008CA19B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB79CD6241E8B71008CA19B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FFB79CF3241E910F008CA19B /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"/Users/oscargallon/Developer/ToDoRa\"\n./gradlew :common:packForXCode\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFB79CB3241E8B6D008CA19B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB79CBB241E8B6D008CA19B /* AppDelegate.swift in Sources */,
+				FFB79CBD241E8B6D008CA19B /* SceneDelegate.swift in Sources */,
+				FFB79CF1241E8EA1008CA19B /* ViewController.swift in Sources */,
+				FFB79CBF241E8B6D008CA19B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB79CC9241E8B71008CA19B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB79CD2241E8B71008CA19B /* TodoraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB79CD4241E8B71008CA19B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB79CDD241E8B71008CA19B /* TodoraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFB79CCF241E8B71008CA19B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB79CB6241E8B6D008CA19B /* Todora */;
+			targetProxy = FFB79CCE241E8B71008CA19B /* PBXContainerItemProxy */;
+		};
+		FFB79CDA241E8B71008CA19B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB79CB6241E8B6D008CA19B /* Todora */;
+			targetProxy = FFB79CD9241E8B71008CA19B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFB79CC5241E8B70008CA19B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB79CC6241E8B70008CA19B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFB79CDF241E8B71008CA19B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/oscargallon/Developer/ToDoRa/common/build/xcode-frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFB79CE0241E8B71008CA19B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/oscargallon/Developer/ToDoRa/common/build/xcode-frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFB79CE2241E8B71008CA19B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Todora/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Todora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todora.Todora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFB79CE3241E8B71008CA19B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Todora/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Todora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todora.Todora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFB79CE5241E8B71008CA19B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todora.TodoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Todora.app/Todora";
+			};
+			name = Debug;
+		};
+		FFB79CE6241E8B71008CA19B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todora.TodoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Todora.app/Todora";
+			};
+			name = Release;
+		};
+		FFB79CE8241E8B71008CA19B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todora.TodoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todora;
+			};
+			name = Debug;
+		};
+		FFB79CE9241E8B71008CA19B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todora.TodoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todora;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFB79CB2241E8B6D008CA19B /* Build configuration list for PBXProject "Todora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB79CDF241E8B71008CA19B /* Debug */,
+				FFB79CE0241E8B71008CA19B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB79CE1241E8B71008CA19B /* Build configuration list for PBXNativeTarget "Todora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB79CE2241E8B71008CA19B /* Debug */,
+				FFB79CE3241E8B71008CA19B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB79CE4241E8B71008CA19B /* Build configuration list for PBXNativeTarget "TodoraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB79CE5241E8B71008CA19B /* Debug */,
+				FFB79CE6241E8B71008CA19B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB79CE7241E8B71008CA19B /* Build configuration list for PBXNativeTarget "TodoraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB79CE8241E8B71008CA19B /* Debug */,
+				FFB79CE9241E8B71008CA19B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFB79CAF241E8B6D008CA19B /* Project object */;
+}
