@@ -7,15 +7,34 @@
 //
 
 import SwiftUI
+import SharedCode
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView: SwiftUI.View {
+//    
+////
+////    @ObservedObject var store: XViewModel
+////    
+////    
+////    var body: some SwiftUI.View {
+////     switch store.state {
+////       case .loaded(let description) : return AnyView( VStack {
+////                  Text("\(description)")
+////       })
+////     default : return AnyView(AskView(onAction: self.onAction(description:)).onAppear {
+////     self.presenter.bind(view: self.store as SharedCode.CreateTodoContractView)
+////     })
+////    }
+////    }
+////    
+////    func onAction(description: String) -> Void {
+////        self.presenter.create(description: description)
+////    }
+//}
+//
+//
+//struct ContentView_Previews: SwiftUI.PreviewProvider {
+//    
+//    static var previews: some SwiftUI.View {
+//        ContentView(store: XViewModel())
+//    }
+//}

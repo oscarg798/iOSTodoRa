@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF6F1FA5241F90F00025E590 /* XViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F1FA4241F90F00025E590 /* XViewModel.swift */; };
+		FF6F1FA7241F980D0025E590 /* AskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F1FA6241F980D0025E590 /* AskView.swift */; };
 		FFB79CBB241E8B6D008CA19B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CBA241E8B6D008CA19B /* AppDelegate.swift */; };
 		FFB79CBD241E8B6D008CA19B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CBC241E8B6D008CA19B /* SceneDelegate.swift */; };
 		FFB79CBF241E8B6D008CA19B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CBE241E8B6D008CA19B /* ContentView.swift */; };
@@ -15,10 +17,10 @@
 		FFB79CC7241E8B70008CA19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB79CC5241E8B70008CA19B /* LaunchScreen.storyboard */; };
 		FFB79CD2241E8B71008CA19B /* TodoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CD1241E8B71008CA19B /* TodoraTests.swift */; };
 		FFB79CDD241E8B71008CA19B /* TodoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CDC241E8B71008CA19B /* TodoraUITests.swift */; };
-		FFB79CEC241E8CA1008CA19B /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB79CEB241E8CA1008CA19B /* SharedCode.framework */; };
-		FFB79CED241E8CA1008CA19B /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFB79CEB241E8CA1008CA19B /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFB79CF1241E8EA1008CA19B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CEF241E8EA1008CA19B /* ViewController.swift */; };
 		FFB79CF2241E8EA1008CA19B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB79CF0241E8EA1008CA19B /* ViewController.xib */; };
+		FFB79CF6241EA05D008CA19B /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB79CF5241EA05D008CA19B /* SharedCode.framework */; };
+		FFB79CF7241EA05D008CA19B /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFB79CF5241EA05D008CA19B /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FFB79CEE241E8CA1008CA19B /* Embed Frameworks */ = {
+		FFB79CF8241EA05D008CA19B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FFB79CED241E8CA1008CA19B /* SharedCode.framework in Embed Frameworks */,
+				FFB79CF7241EA05D008CA19B /* SharedCode.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF6F1FA4241F90F00025E590 /* XViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XViewModel.swift; sourceTree = "<group>"; };
+		FF6F1FA6241F980D0025E590 /* AskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskView.swift; sourceTree = "<group>"; };
 		FFB79CB7241E8B6D008CA19B /* Todora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB79CBA241E8B6D008CA19B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFB79CBC241E8B6D008CA19B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		FFB79CEB241E8CA1008CA19B /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../../ToDoRa/common/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
 		FFB79CEF241E8EA1008CA19B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFB79CF0241E8EA1008CA19B /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		FFB79CF5241EA05D008CA19B /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../ToDoRa/common/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB79CEC241E8CA1008CA19B /* SharedCode.framework in Frameworks */,
+				FFB79CF6241EA05D008CA19B /* SharedCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +136,8 @@
 				FFB79CC2241E8B70008CA19B /* Preview Content */,
 				FFB79CEF241E8EA1008CA19B /* ViewController.swift */,
 				FFB79CF0241E8EA1008CA19B /* ViewController.xib */,
+				FF6F1FA4241F90F00025E590 /* XViewModel.swift */,
+				FF6F1FA6241F980D0025E590 /* AskView.swift */,
 			);
 			path = Todora;
 			sourceTree = "<group>";
@@ -164,6 +171,7 @@
 		FFB79CEA241E8CA1008CA19B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFB79CF5241EA05D008CA19B /* SharedCode.framework */,
 				FFB79CEB241E8CA1008CA19B /* SharedCode.framework */,
 			);
 			name = Frameworks;
@@ -180,7 +188,7 @@
 				FFB79CB3241E8B6D008CA19B /* Sources */,
 				FFB79CB4241E8B6D008CA19B /* Frameworks */,
 				FFB79CB5241E8B6D008CA19B /* Resources */,
-				FFB79CEE241E8CA1008CA19B /* Embed Frameworks */,
+				FFB79CF8241EA05D008CA19B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,9 +332,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6F1FA7241F980D0025E590 /* AskView.swift in Sources */,
 				FFB79CBB241E8B6D008CA19B /* AppDelegate.swift in Sources */,
 				FFB79CBD241E8B6D008CA19B /* SceneDelegate.swift in Sources */,
 				FFB79CF1241E8EA1008CA19B /* ViewController.swift in Sources */,
+				FF6F1FA5241F90F00025E590 /* XViewModel.swift in Sources */,
 				FFB79CBF241E8B6D008CA19B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

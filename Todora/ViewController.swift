@@ -9,18 +9,22 @@
 import UIKit
 import SharedCode
 
-class ViewController: UIViewController,View {
-   
-
+class ViewController: UIViewController, CreateTodoContractView {
+  
     @IBOutlet weak var btnAdd: UIButton!
     
     @IBOutlet weak var etDescription: UITextField!
     
     @IBOutlet weak var lbl: UILabel!
-    let presenter = TodoPresenter(todoraInteractor: GetTodoraInteractor(todoRepository: TodoClientRepository()))
+   
+    let presenter: TodoPresenter? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let repo = TodoClientRepository(todoService: KtorTodoService())
+        let createInteractor = CreateTodoInteractor(todoRepository: repo)
+        let getTodoInteractor = GetTodosInteractor(todoRepository: repo)
+           let presenter = TodoPresenter(createTodoInteractor: createInteractor, getTodosInteractor: getTodoInteractor, dispatchersProvider: TodoDispatcherProvider())
         presenter.bind(view: self)
 
         // Do any additional setup after loading the view.
@@ -30,24 +34,17 @@ class ViewController: UIViewController,View {
         lbl.text = todo.todoDescription
     }
        
-
+    func show(todos: [Todo]) {
+        lbl.text = todos[0].todoDescription
+      }
+    
     @IBAction func onClick(_ sender: Any) {
         let description = etDescription.text
         guard description != nil else {
             return
         }
         
-        presenter.create(description: description!)
+        presenter?.create(description: description!)
 
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
