@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C25423D792C020D65170A05 /* libPods-Todora.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0978186487F9D148965E8761 /* libPods-Todora.a */; };
 		FF6F1FA5241F90F00025E590 /* XViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F1FA4241F90F00025E590 /* XViewModel.swift */; };
 		FF6F1FA7241F980D0025E590 /* AskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F1FA6241F980D0025E590 /* AskView.swift */; };
 		FFB79CBB241E8B6D008CA19B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CBA241E8B6D008CA19B /* AppDelegate.swift */; };
@@ -19,8 +20,6 @@
 		FFB79CDD241E8B71008CA19B /* TodoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CDC241E8B71008CA19B /* TodoraUITests.swift */; };
 		FFB79CF1241E8EA1008CA19B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB79CEF241E8EA1008CA19B /* ViewController.swift */; };
 		FFB79CF2241E8EA1008CA19B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB79CF0241E8EA1008CA19B /* ViewController.xib */; };
-		FFB79CF6241EA05D008CA19B /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB79CF5241EA05D008CA19B /* SharedCode.framework */; };
-		FFB79CF7241EA05D008CA19B /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFB79CF5241EA05D008CA19B /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,21 +39,11 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		FFB79CF8241EA05D008CA19B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FFB79CF7241EA05D008CA19B /* SharedCode.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		0978186487F9D148965E8761 /* libPods-Todora.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Todora.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		609E7568C494F8469927D36A /* Pods-Todora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todora.release.xcconfig"; path = "Target Support Files/Pods-Todora/Pods-Todora.release.xcconfig"; sourceTree = "<group>"; };
+		6E70E6AAE419956730B4A611 /* Pods-Todora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todora.debug.xcconfig"; path = "Target Support Files/Pods-Todora/Pods-Todora.debug.xcconfig"; sourceTree = "<group>"; };
+		8D7B40A824300F8800FAA3C0 /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../../Android/ToDoRa/common/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
 		FF6F1FA4241F90F00025E590 /* XViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XViewModel.swift; sourceTree = "<group>"; };
 		FF6F1FA6241F980D0025E590 /* AskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskView.swift; sourceTree = "<group>"; };
 		FFB79CB7241E8B6D008CA19B /* Todora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todora.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB79CF6241EA05D008CA19B /* SharedCode.framework in Frameworks */,
+				7C25423D792C020D65170A05 /* libPods-Todora.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,14 +92,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40456B836317D6F5CAF47698 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E70E6AAE419956730B4A611 /* Pods-Todora.debug.xcconfig */,
+				609E7568C494F8469927D36A /* Pods-Todora.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FFB79CAE241E8B6D008CA19B = {
 			isa = PBXGroup;
 			children = (
+				8D7B40A824300F8800FAA3C0 /* SharedCode.framework */,
 				FFB79CB9241E8B6D008CA19B /* Todora */,
 				FFB79CD0241E8B71008CA19B /* TodoraTests */,
 				FFB79CDB241E8B71008CA19B /* TodoraUITests */,
 				FFB79CB8241E8B6D008CA19B /* Products */,
 				FFB79CEA241E8CA1008CA19B /* Frameworks */,
+				40456B836317D6F5CAF47698 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +173,7 @@
 			children = (
 				FFB79CF5241EA05D008CA19B /* SharedCode.framework */,
 				FFB79CEB241E8CA1008CA19B /* SharedCode.framework */,
+				0978186487F9D148965E8761 /* libPods-Todora.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,11 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFB79CE1241E8B71008CA19B /* Build configuration list for PBXNativeTarget "Todora" */;
 			buildPhases = (
+				1D70DBF59A4750565C761DAD /* [CP] Check Pods Manifest.lock */,
 				FFB79CF3241E910F008CA19B /* Run Script */,
 				FFB79CB3241E8B6D008CA19B /* Sources */,
 				FFB79CB4241E8B6D008CA19B /* Frameworks */,
 				FFB79CB5241E8B6D008CA19B /* Resources */,
-				FFB79CF8241EA05D008CA19B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +308,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D70DBF59A4750565C761DAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Todora-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FFB79CF3241E910F008CA19B /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,7 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"/Users/oscargallon/Developer/ToDoRa\"\n./gradlew :common:packForXCode\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"/Users/alejandrorios/Documents/Workstation/Android/ToDoRa\"\n./gradlew :common:packForXCode\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -420,7 +443,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "/Users/oscargallon/Developer/ToDoRa/common/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = "/Users/alejandrorios/Documents/Workstation/Android/ToDoRa/common/build/xcode-frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -481,7 +504,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "/Users/oscargallon/Developer/ToDoRa/common/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = "/Users/alejandrorios/Documents/Workstation/Android/ToDoRa/common/build/xcode-frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -502,6 +525,7 @@
 		};
 		FFB79CE2241E8B71008CA19B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E70E6AAE419956730B4A611 /* Pods-Todora.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +545,7 @@
 		};
 		FFB79CE3241E8B71008CA19B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609E7568C494F8469927D36A /* Pods-Todora.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
