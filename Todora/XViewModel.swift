@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SharedCode
+import common
 import Combine
 
 final class XViewModel: ObservableObject, CreateTodoContractView {

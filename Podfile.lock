@@ -1,0 +1,16 @@
+PODS:
+  - common (0.1)
+
+DEPENDENCIES:
+  - common (from `/Users/alejandrorios/Documents/Workstation/Android/ToDoRa/common`)
+
+EXTERNAL SOURCES:
+  common:
+    :path: "/Users/alejandrorios/Documents/Workstation/Android/ToDoRa/common"
+
+SPEC CHECKSUMS:
+  common: 312247984e75c90d3e6c860bab888b9e86c75aad
+
+PODFILE CHECKSUM: 32c0066815791b3652ba89c991e25228076781a8
+
+COCOAPODS: 1.9.1
